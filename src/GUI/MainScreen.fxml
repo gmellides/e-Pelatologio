@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="438.0" prefWidth="678.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MainScreenController">
+    <stylesheets>
+        <URL value="@/CSSFiles/MainScreen.css" />
+    </stylesheets>
+   <children>
+      <Pane id="TitlePanel" prefHeight="63.0" prefWidth="678.0" stylesheets="@../CSSFiles/MainScreen.css">
+         <children>
+            <Label id="lblTitle" layoutX="14.0" layoutY="8.0" text="Main Screen" />
+            <Label id="Clock" fx:id="lblClock" layoutX="511.0" layoutY="8.0" prefHeight="51.0" prefWidth="158.0" stylesheets="@../CSSFiles/MainScreen.css" text="Clock" />
+         </children>
+      </Pane>
+      <Pane id="ContentPanel" layoutY="69.0" prefHeight="370.0" prefWidth="678.0" stylesheets="@../CSSFiles/MainScreen.css">
+         <children>
+            <TabPane layoutY="-7.0" minHeight="-Infinity" prefHeight="322.0" prefWidth="678.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab onSelectionChanged="#FillCustomers" text="Customes">
+                     <content>
+                        <TableView fx:id="tblCustomers" editable="true" prefHeight="288.0" prefWidth="678.0" tableMenuButtonVisible="true">
+                          <columns>
+                            <TableColumn fx:id="ColId" prefWidth="58.0" text="iD" /> 
+                            <TableColumn fx:id="ColFirstName" editable="false" prefWidth="71.0" text="Name" />
+                            <TableColumn fx:id="ColLastName" prefWidth="74.0" text="Surname" />
+                            <TableColumn fx:id="ColPhone" prefWidth="77.0" text="Phone" />
+                            <TableColumn fx:id="ColAddress" prefWidth="83.0" text="Address" />
+                            <TableColumn fx:id="ColCity" prefWidth="67.0" text="City" />
+                            <TableColumn fx:id="ColPostal" minWidth="0.0" text="Postal Code" />
+                            <TableColumn fx:id="ColCompany" minWidth="0.0" prefWidth="88.0" text="Company" />
+                            <TableColumn fx:id="ColMail" prefWidth="84.0" text="e-mail" />
+                          </columns>
+                           <contextMenu>
+                              <ContextMenu fx:id="CTMOptions">
+                                <items>
+                                  <MenuItem mnemonicParsing="false" onAction="#EditCnt" text="Edit" />
+                                    <MenuItem fx:id="ctmDelete" mnemonicParsing="false" onAction="#DeleteCnt" text="Delete" />
+                                </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </TableView>
+                     </content>
+                  </Tab>
+                  <Tab closable="false" onSelectionChanged="#FillCustomers" text="New Customer">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Pane id="NewCustomerPanel" layoutY="-3.0" prefHeight="299.0" prefWidth="678.0" stylesheets="@../CSSFiles/MainScreen.css">
+                                 <children>
+                                    <Button layoutX="539.0" layoutY="254.0" mnemonicParsing="false" onAction="#btnSaveCust" prefHeight="25.0" prefWidth="98.0" text="Save" />
+                                    <Label id="InsertTitle" layoutX="274.0" layoutY="14.0" stylesheets="@../CSSFiles/MainScreen.css" text="New Customer" />
+                                    <Label layoutX="26.0" layoutY="72.0" styleClass="Messages" stylesheets="@../CSSFiles/MainScreen.css" text="Name:" />
+                                    <TextField fx:id="txtCFirstName" layoutX="117.0" layoutY="72.0" prefHeight="25.0" prefWidth="187.0" promptText="John" />
+                                    <TextField fx:id="txtCLastName" layoutX="117.0" layoutY="114.0" prefHeight="25.0" prefWidth="186.0" promptText="Smith" />
+                                    <TextField fx:id="txtCPhone" layoutX="117.0" layoutY="155.0" prefHeight="25.0" prefWidth="187.0" promptText="658744852" />
+                                    <TextField fx:id="txtCAddress" layoutX="117.0" layoutY="196.0" prefHeight="25.0" prefWidth="186.0" promptText="Railroad 32" />
+                                    <TextField fx:id="txtCCity" layoutX="439.0" layoutY="72.0" prefHeight="25.0" prefWidth="192.0" promptText="Boston" />
+                                    <TextField fx:id="txtCPostal" layoutX="463.0" layoutY="113.0" prefHeight="25.0" prefWidth="169.0" promptText="16584" />
+                                    <TextField fx:id="txtCCompany" layoutX="447.0" layoutY="155.0" prefHeight="25.0" prefWidth="184.0" promptText="Bank" />
+                                    <TextField fx:id="txtCMail" layoutX="437.0" layoutY="196.0" prefHeight="25.0" prefWidth="194.0" promptText="JoshnSmith@outlook.com" />
+                                    <Label layoutX="26.0" layoutY="114.0" styleClass="Messages" stylesheets="@../CSSFiles/MainScreen.css" text="Surname:" />
+                                    <Label layoutX="25.0" layoutY="156.0" styleClass="Messages" stylesheets="@../CSSFiles/MainScreen.css" text="Phone:" />
+                                    <Button layoutX="20.0" layoutY="254.0" mnemonicParsing="false" onAction="#btnClearComp" prefHeight="25.0" prefWidth="72.0" text="Clear" />
+                                    <Label layoutX="24.0" layoutY="196.0" styleClass="Messages" stylesheets="@../CSSFiles/MainScreen.css" text="Address:" />
+                                    <Line endX="60.0" layoutX="357.0" layoutY="149.0" rotate="90.0" startX="-100.0" stroke="#014c68" />
+                                    <Label layoutX="369.0" layoutY="74.0" styleClass="Messages" stylesheets="@../CSSFiles/MainScreen.css" text="City:" />
+                                    <Label layoutX="368.0" layoutY="115.0" styleClass="Messages" stylesheets="@../CSSFiles/MainScreen.css" text="Postal Code" />
+                                    <Label layoutX="369.0" layoutY="196.0" styleClass="Messages" stylesheets="@../CSSFiles/MainScreen.css" text="e-mail:" />
+                                    <Label layoutX="368.0" layoutY="156.0" styleClass="Messages" stylesheets="@../CSSFiles/MainScreen.css" text="Company:" />
+                                 </children></Pane>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+            <Pane id="DownPanel" layoutY="315.0" prefHeight="63.0" prefWidth="678.0" stylesheets="@../CSSFiles/MainScreen.css">
+               <children>
+                  <Button layoutX="25.0" layoutY="19.0" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" onAction="#btnExitAction" prefHeight="25.0" prefWidth="90.0" text="Exit" />
+                  <Label id="Date" fx:id="lblDate" layoutX="486.0" layoutY="6.0" prefHeight="51.0" prefWidth="184.0" stylesheets="@../CSSFiles/MainScreen.css" text="Date" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

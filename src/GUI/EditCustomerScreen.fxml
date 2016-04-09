@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="377.0" prefWidth="678.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.EditCustomerScreenController">
+    <stylesheets>
+        <URL value="@/CSSFiles/EditCustomerScreen.css" />
+    </stylesheets>
+   <children>
+      <Pane id="TitlePanel" prefHeight="63.0" prefWidth="678.0" stylesheets="@../CSSFiles/EditCustomerScreen.css">
+         <children>
+            <Label id="lblEditTitle" layoutX="224.0" layoutY="6.0" stylesheets="@../CSSFiles/EditCustomerScreen.css" text="Edit Customer" />
+         </children></Pane>
+      <Pane id="ComponentsPanel" layoutY="63.0" prefHeight="314.0" prefWidth="678.0" stylesheets="@../CSSFiles/EditCustomerScreen.css">
+         <children>
+            <Button fx:id="btnClose" layoutX="32.0" layoutY="275.0" mnemonicParsing="false" onAction="#btnCloseEdit" prefHeight="25.0" prefWidth="78.0" text="Close" />
+            <TextField fx:id="txtFirstNameEdit" layoutX="103.0" layoutY="32.0" prefHeight="25.0" prefWidth="179.0" />
+            <TextField fx:id="txtLastNameEdit" layoutX="103.0" layoutY="78.0" prefHeight="25.0" prefWidth="179.0" />
+            <TextField fx:id="txtPhoneEdit" layoutX="103.0" layoutY="122.0" prefHeight="25.0" prefWidth="179.0" />
+            <TextField fx:id="txtAddressEdit" layoutX="103.0" layoutY="171.0" prefHeight="25.0" prefWidth="179.0" />
+            <TextField fx:id="txtCityEdit" layoutX="103.0" layoutY="220.0" prefHeight="25.0" prefWidth="179.0" />
+            <TextField fx:id="txtPostalEdit" layoutX="433.0" layoutY="32.0" prefHeight="25.0" prefWidth="166.0" />
+            <TextField fx:id="txtCompanyEdit" layoutX="420.0" layoutY="78.0" prefHeight="25.0" prefWidth="179.0" />
+            <TextField fx:id="txtMailEdit" layoutX="420.0" layoutY="122.0" prefHeight="25.0" prefWidth="179.0" />
+            <Button layoutX="579.0" layoutY="275.0" mnemonicParsing="false" onAction="#btnSaveEdit" prefHeight="25.0" prefWidth="78.0" text="Save" />
+            <Label layoutX="42.0" layoutY="36.0" text="Name:" />
+            <Label layoutX="42.0" layoutY="82.0" text="Surname:" />
+            <Label layoutX="39.0" layoutY="126.0" text="Phone:" />
+            <Label layoutX="41.0" layoutY="175.0" text="Address:" />
+            <Label layoutX="41.0" layoutY="224.0" text="City:" />
+            <Label layoutX="356.0" layoutY="82.0" text="Company:" />
+            <Label layoutX="356.0" layoutY="126.0" text="e-mail:" />
+            <Label layoutX="356.0" layoutY="36.0" text="Postal Code:" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

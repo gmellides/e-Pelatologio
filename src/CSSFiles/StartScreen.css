@@ -1,0 +1,91 @@
+/* 
+    StartScreen.css
+
+    Κανώνες CSS για την αρχηκή οθώνη.
+*/
+
+/* 1ο Πανελ TitlePanel */
+
+/* Χρώμα πανελ τιτλου.*/
+#TitlePanel{
+    -fx-background-color:#067AA5;
+}
+/* Ετικέτα Τιτλου Εφαρμογής */
+#lblTitle{
+    -fx-font-family: 'Segoe UI Light';
+    -fx-font-size:35px;
+    -fx-text-fill:white;
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.6),5,0.0,0,1);
+}
+/* ===================== */
+
+/* 2ο Πανελ Components Panel */
+
+/* Χρώμα πανελ */
+#ComponentsPanel{
+   -fx-background-color:#079AD1;
+}
+/* Ετικέτα 1 Μηνυματος καλωσορισματος */
+#lblWelcomeMessage1{
+    -fx-font-family: 'Segoe UI Light', Arial, sans-serif;
+    -fx-text-fill: white;
+    -fx-font-size: 40px;
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,1.9),5,0.0,0,1);
+}
+/* Ετικέτα 2 Μηνυματος καλωσορισματος */
+#lblWelcomeMessage2{
+    -fx-font-family:"Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-font-size: 40px;
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,2.9),5,0.0,0,1);
+}
+/* Ετικέτα Μηνυματος Ημερομινιας */
+#lblmsgDate{
+    -fx-font-family:"Segoe UI Light";
+    -fx-font-size:35px;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,2.9),5,0.0,0,1);
+}
+/* Ετικετα Μηνυματος Ωρας */
+#lblmsgClock{
+    -fx-font-family:"Segoe UI Light";
+    -fx-font-size:35px;
+    -fx-text-fill:white;
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,2.9),5,0.0,0,1);
+}
+/* Ετικετα Ημερομινίας*/
+#lblDate{
+    -fx-font-family:"Segoe UI Light";
+    -fx-font-size:30px;
+    -fx-text-fill:white;
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,2.9),5,0.0,0,1);
+}
+/* Ετικέτα Ώρας */
+#lblTime{
+    -fx-font-family:"Segoe UI Light";
+    -fx-font-size:30px;
+    -fx-text-fill:white;
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,2.9),5,0.0,0,1);
+}
+
+/* Κουμπί εξόδου */
+#btnClose{
+    -fx-text-fill: white;
+    -fx-background-color: #067AA5;
+}
+/* Εφε Κουμπιου εξόδου */
+#btnClose:hover{
+    -fx-text-fill: white;
+    -fx-background-color: #f76b6b ;
+}
+/* Κουμπί Συνέχεια */
+#btnContinue{
+    -fx-text-fill: white;
+    -fx-background-color: #067AA5 ;
+}
+/* Εφε Κουμπιου Συνεχειας */
+#btnContinue:hover{
+    -fx-text-fill: white;
+    -fx-background-color: #66ff66 ;
+}
+/* ===================== */

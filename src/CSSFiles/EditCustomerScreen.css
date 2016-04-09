@@ -1,0 +1,17 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+#TitlePanel{
+ -fx-background-color:#067AA5;
+}
+#lblEditTitle{
+     -fx-font-family:"Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-font-size: 35px;
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.6),5,0.0,0,1);
+}
+
+#ComponentsPanel{
+    -fx-background-color: #ff6666;
+}

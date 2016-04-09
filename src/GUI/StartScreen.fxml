@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="438.0" prefWidth="678.0" stylesheets="@../CSSFiles/CompanyInfoScreen.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.StartScreenController">
+   <children>
+      <Pane id="TitlePanel" prefHeight="65.0" prefWidth="678.0" stylesheets="@../CSSFiles/StartScreen.css">
+         <children>
+            <Label id="lblTitle" layoutX="14.0" layoutY="11.0" stylesheets="@MainScreen.css" text="e-Customer Keeper" />
+         </children>
+      </Pane>
+      <Pane id="ComponentsPanel" layoutY="65.0" prefHeight="373.0" prefWidth="678.0" stylesheets="@../CSSFiles/StartScreen.css">
+         <children>
+            <Button id="btnClose" layoutX="51.0" layoutY="316.0" mnemonicParsing="false" onAction="#btnCloseAction" prefHeight="25.0" prefWidth="90.0" stylesheets="@MainScreen.css" text="Exit">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button id="btnContinue" layoutX="518.0" layoutY="316.0" mnemonicParsing="false" onAction="#btnGoAction" prefHeight="25.0" prefWidth="103.0" stylesheets="@../CSSFiles/StartScreen.css" text="Continue">
+               <effect>
+                  <DropShadow />
+               </effect></Button>
+            <Label id="lblmsgDate" layoutX="475.0" layoutY="27.0" stylesheets="@MainScreen.css" text="Date" />
+            <Label id="lblmsgClock" layoutX="475.0" layoutY="161.0" stylesheets="@MainScreen.css" text="Time" />
+            <Label id="lblDate" fx:id="lblDate" layoutX="446.0" layoutY="102.0" prefHeight="45.0" prefWidth="195.0" stylesheets="@MainScreen.css" text="DD/MM/YYYY" />
+            <Label id="lblTime" fx:id="lblTime" layoutX="458.0" layoutY="223.0" prefHeight="40.0" prefWidth="148.0" stylesheets="@MainScreen.css" text="HH:MM:SS" />
+            <Label id="lblWelcomeMessage1" layoutX="89.0" layoutY="73.0" stylesheets="@MainScreen.css" text="Welcome" />
+            <Label id="lblWelcomeMessage2" layoutX="82.0" layoutY="158.0" stylesheets="@MainScreen.css" text="to the App" />
+            <Line endX="150.0" fill="BLACK" layoutX="348.0" layoutY="153.0" rotate="90.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" color="#000000e4" height="44.48" radius="53.614999999999995" spread="0.69" width="171.98" />
+               </effect>
+            </Line>
+            <Label id="lblTime" fx:id="lblWaitMessage" layoutX="233.0" layoutY="306.0" prefHeight="45.0" prefWidth="213.0" stylesheets="@../CSSFiles/MainScreen.css" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

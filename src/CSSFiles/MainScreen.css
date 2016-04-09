@@ -1,0 +1,62 @@
+/*
+ * Main Screen CSS File
+ */
+
+/* --- Title Panel CSS rules --- */
+#TitlePanel{
+    -fx-background-color:#067AA5;
+}
+#lblTitle{
+    -fx-font-family:"Segoe UI Light";
+    -fx-font-size:35px;
+    -fx-text-fill:white;
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.6),5,0.0,0,1);
+}
+/* ----------------------------- */
+
+#ContentPanel{
+    -fx-background-color: null;
+}
+#DownPanel{
+    -fx-background-color: #067AA5;
+}
+#Clock{
+    -fx-font-family:"Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-font-size: 35px;
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.6),5,0.0,0,1);
+}
+#Date{
+    -fx-font-family:"Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-font-size: 35px;
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.6),5,0.0,0,1);
+}
+#NewCustomerPanel{
+    -fx-background-color: #6df4b4;
+}
+.Messages{
+    -fx-font-family:"Segoe UI Light";
+    -fx-text-fill: #067AA5;
+    -fx-font-size:16px;
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.6),5,0.0,0,1);
+}
+#Checkit{
+    -fx-font-family:"Segoe UI Light";
+    -fx-text-fill: #067AA5;
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.6),5,0.0,0,1);
+}
+#InsertTitle{
+    -fx-font-family:"Segoe UI Light";
+    -fx-text-fill: #067AA5;
+    -fx-font-size:20px;
+    -fx-font-weight:bold;
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.6),5,0.0,0,1);
+}
+#SuccessMessage{
+    -fx-font-family:"Segoe UI Light";
+    -fx-text-fill: #0b5cbe;
+    -fx-font-size:14px;
+    -fx-font-weight:bold;
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.6),5,0.0,0,1);
+}
